@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nexus Phoenix Scheduler</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="top">
+
+<div class="logo">
+
+<h1>NEXUS <span>PHOENIX</span></h1>
+
+<p>Alliance Event Scheduler</p>
+
+</div>
+
+<div class="clock">
+
+<div class="server">
+
+<label>SERVER TIME</label>
+
+<h2 id="serverTime">00:00:00</h2>
+
+</div>
+
+<div class="local">
+
+<label>LOCAL TIME</label>
+
+<h2 id="localTime">00:00:00</h2>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="next-event">
+
+<div class="title">
+
+NEXT EVENT
+
+</div>
+
+<h2 id="nextName">
+
+Loading...
+
+</h2>
+
+<p id="nextTime">
+
+--:--
+
+</p>
+
+<div id="countdown">
+
+00:00:00
+
+</div>
+
+</section>
+
+<section class="week-selector">
+
+<button class="week active" data-week="1">
+
+Week 1
+
+</button>
+
+<button class="week" data-week="2">
+
+Week 2
+
+</button>
+
+<button class="week" data-week="3">
+
+Week 3
+
+</button>
+
+<button class="week" data-week="4">
+
+Week 4
+
+</button>
+
+</section>
+
+<section id="calendar">
+
+</section>
+
+<footer>
+
+Created for Nexus Phoenix
+
+<br>
+
+Designed by BOY
+
+</footer>
+
+<script src="schedule.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
